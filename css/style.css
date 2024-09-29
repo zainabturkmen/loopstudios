@@ -501,6 +501,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.hidden {
+  display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -523,6 +531,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
+.font-alata {
+  font-family: Alata;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -538,7 +550,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: cover;
 }
 
-@media(max-width: 578px){
+@media (max-width: 578px) {
+  #hero {
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 /* @layer base {
@@ -624,6 +641,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 } */
 
 @media (min-width: 768px) {
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
