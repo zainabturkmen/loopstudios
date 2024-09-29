@@ -496,6 +496,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -506,12 +510,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .hidden {
   display: none;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .max-w-6xl {
@@ -664,6 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
