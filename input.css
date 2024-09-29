@@ -5,7 +5,10 @@
 #hero {
   background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
+}
+@media(max-width: 578px){
+  
 }
 
 /* @layer base {

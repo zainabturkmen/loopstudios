@@ -535,7 +535,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 #hero {
   background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
+}
+
+@media(max-width: 578px){
 }
 
 /* @layer base {
