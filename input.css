@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+
 /* @layer base {
   h5 {
     @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
