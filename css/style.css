@@ -496,6 +496,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.relative {
+  position: relative;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -508,6 +512,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .mt-3 {
@@ -548,6 +557,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -604,6 +617,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 #hero {
@@ -732,6 +750,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
