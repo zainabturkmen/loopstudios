@@ -12,6 +12,10 @@
   @apply flex flex-col justify-berween w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
 }
 
+.item {
+  @apply relative overflow-hidden md:w-1/4;
+}
+
 #hero {
   background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
