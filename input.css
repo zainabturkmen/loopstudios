@@ -2,38 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn {
-    @apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white;
-  }
-}
-
-.item-container {
-  @apply flex flex-col justify-berween w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
-}
-
-.item {
-  @apply relative overflow-hidden md:w-1/4;
-}
-
-.item-gradient {
-  @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
-}
-
-#hero {
-  background-image: url("../images/desktop/image-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 578px) {
-  #hero {
-    background-image: url("../images/mobile/image-hero.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-/* @layer base {
+@layer base {
   h5 {
     @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
   }
@@ -58,14 +27,14 @@
 }
 
 #hero {
-  background-image: url('../images/desktop/image-hero.jpg');
+  background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (max-width: 576px) {
   #hero {
-    background-image: url('../images/mobile/image-hero.jpg');
+    background-image: url("../images/mobile/image-hero.jpg");
     background-position: center;
   }
 }
@@ -113,4 +82,4 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-} */
+}
